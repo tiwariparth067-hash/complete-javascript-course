@@ -22,4 +22,17 @@
 // console.log(`i am ${23} years old`);
 // console.log('I am '+ 23 + ' years old');
 
- 
+const scoreDolphins = (97+112+101)/3;
+const scoreKoalas = (109+95+106)/3;
+const minimumScore=100;
+
+console.log(scoreDolphins,scoreKoalas);
+
+if(scoreDolphins >= minimumScore && scoreDolphins > scoreKoalas){
+     console.log('Dolphins wins');
+}else if(scoreKoalas >= minimumScore && scoreKoalas > scoreDolphins){
+     console.log('Koalas wins');
+     
+}else if(scoreDolphins >= minimumScore && scoreKoalas >= minimumScore && scoreDolphins == scoreKoalas){
+     console.log('Both wins');
+}
